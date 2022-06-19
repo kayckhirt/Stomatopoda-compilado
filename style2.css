@@ -43,9 +43,8 @@ header a:hover{
     border-radius: 5px;
 }
 main{
-    width: 60%;
-    margin-left: 10%;
-    float: left;
+    width: 75%;
+    margin: auto;
     background-color: var(--cor01);
     padding: 2%;
     text-align: center;
@@ -64,14 +63,13 @@ ul{
     display: block;
 }
 aside{
-    width: 25%;
-    float: right;
+    width: 100%;
     background-color: var(--cor02);
     height: 100%;
     font-size: 1.2em;
     padding: 1%;
     padding-right: 10%;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -83,10 +81,11 @@ aside a{
     font-size: 1.8em;
 }
 .img{
-    width: 500px;
+    width: 65%;
+    transition: transform 0.2s;
 }
-.img:active{
-    width: 100%;
+.img:hover{
+    transform: scale(1.1);
 }
 .referencias a{
     padding-right: 15px;
