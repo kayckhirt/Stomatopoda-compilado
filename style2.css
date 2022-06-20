@@ -110,7 +110,7 @@ footer{
     width: 100%;
     max-width: 100vw;
     text-align: center;
-    padding: 35px;
+    padding: 35px 0;
 }
 
 @media screen and (max-width:500px) {
