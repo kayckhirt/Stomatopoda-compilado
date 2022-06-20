@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 *{
     font-family: var(--font);
+    
 }
 :root{
     --cor01: #D8E6F2;
@@ -9,6 +10,11 @@
     --cor03: #024959;
     --cor04: #012E40;
     --font: 'Libre Baskerville';
+}
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
 h2, h3, h4{
     color: var(--cor04);
@@ -18,13 +24,15 @@ body{
     overflow-x: hidden;
 }
 header{
-    width: 100%;
     height: 200px;
+    width: 100%;
+    display: inline-block;
     background-color: #024959;
     padding-top: 10px;
     text-align: center;
     color: var(--cor01);
     box-sizing: border-box;
+
 }
 header h1{
     font-size: 2em
@@ -38,6 +46,7 @@ header ul li{
     display: inline-block;
     margin-top: 2%;
     padding-right: 1%;
+    box-sizing: border-box;
 }
 header a:hover{
     background-color: var(--cor01);
@@ -96,10 +105,29 @@ aside a{
     text-decoration: none;
 }
 footer{
-    clear: both;
     background-color: var(--cor04);
     color: var(--cor01);
     width: 100%;
+    max-width: 100vw;
     text-align: center;
     padding: 35px;
+}
+
+@media screen and (max-width:500px) {
+    header{
+        width: 100%;
+    }
+    header h1{
+        font-size: 1.8em;
+    }
+    .navegacao{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        padding: 0;
+
+    }
+}
 }
